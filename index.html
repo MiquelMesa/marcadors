@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080c18">
+  <meta name="color-scheme" content="dark light">
+  <title>Marcadors - Gestor de Marcadors i Enllaços</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Gestor de Marcadors i Enllaços</h1>
+    <p>Arrossega una carpeta o fes clic a la zona de sota per importar els teus marcadors.</p>
+    <button id="btn-theme-toggle" class="btn-theme-toggle" aria-label="Canviar tema clar/fosc">☀️</button>
+  </header>
+
+  <div id="error-message" class="error-message hidden" role="alert"></div>
+
+  <main class="container">
+    <section id="drop-zone" class="drop-zone" aria-label="Zona per deixar anar la carpeta">
+      <div class="drop-zone-content">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/>
+        </svg>
+        <p>Arrossega una carpeta o fes clic per seleccionar-la</p>
+        <span class="subtext">Accepta carpetes amb fitxers .url i fitxers .html / .htm de marcadors</span>
+      </div>
+      <input type="file" id="folder-picker" class="hidden" webkitdirectory multiple accept=".url,.html,.htm" aria-label="Seleccionar carpeta de marcadors">
+    </section>
+
+    <section id="status-panel" class="status-panel hidden" aria-label="Estat de la lectura">
+      <h3>Resum de fitxers llegits</h3>
+      <div class="stats">
+        <div class="stat-card">
+          <span class="stat-number" id="count-valid">0</span>
+          <span class="stat-label">Enllaços preparats</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="count-invalid">0</span>
+          <span class="stat-label">Fitxers ignorats / invàlids</span>
+        </div>
+      </div>
+
+      <div id="progress-container" class="progress-container hidden" aria-live="polite">
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
+        </div>
+        <span id="progress-text" class="progress-text">Llegint fitxers...</span>
+      </div>
+
+      <div class="action-bar">
+        <button id="btn-classify" class="btn-primary" disabled aria-label="Classificar fitxers al servidor">
+          Classificar al Servidor
+        </button>
+      </div>
+    </section>
+
+    <div id="loading-spinner" class="spinner-container hidden" role="status" aria-live="polite">
+      <div class="spinner"></div>
+      <p id="loading-text">El servidor està classificant les teves URLs, si us plau espera...</p>
+    </div>
+
+    <section id="results-panel" class="results-panel hidden" aria-label="Resultats de la classificació">
+      <h2>Resultats obtinguts</h2>
+      <div class="results-stats">
+        <p><span class="stat-link" data-stat="total">Total enviats: <strong id="res-total">0</strong></span> | <span class="stat-link" data-stat="dup">Duplicats descartats: <strong id="res-dup">0</strong></span> | <span class="stat-link" data-stat="class">Classificats: <strong id="res-class">0</strong></span></p>
+      </div>
+      <div class="results-toolbar">
+        <div class="search-wrapper">
+          <div class="search-tabs" role="tablist" aria-label="Mode de cerca">
+            <button id="search-tab-cat" class="search-tab active" role="tab" aria-selected="true">Categories</button>
+            <button id="search-tab-link" class="search-tab" role="tab" aria-selected="false">Enllaços</button>
+          </div>
+          <input type="text" id="search-themes" class="search-input" placeholder="Cercar categoria..." aria-label="Cercar" disabled>
+        </div>
+        <button id="btn-export-json" class="btn-secondary" disabled aria-label="Exportar resultats com a JSON">Exportar JSON</button>
+        <button id="btn-export-html" class="btn-secondary" disabled aria-label="Exportar com a HTML de marcadors">Exportar HTML</button>
+        <button id="btn-reiniciar" class="btn-secondary btn-danger" disabled aria-label="Reiniciar dades des de zero" style="margin-left:auto;border-color:var(--error-border);color:var(--error-color);">Reiniciar</button>
+      </div>
+      <div id="add-url-bar" class="add-url-bar hidden">
+        <input type="text" id="input-nueva-url" class="search-input" placeholder="Enganxa una URL aquí..." aria-label="Nova URL">
+        <select id="addurl-categoria" class="search-input addurl-cat-select" aria-label="Categoria de destí"></select>
+        <div id="addurl-nueva-categoria-container" class="hidden addurl-nueva-cat-wrap">
+          <input type="text" id="addurl-nueva-categoria" class="search-input uppercase" placeholder="NOM DE LA CATEGORIA" style="flex:1;">
+        </div>
+        <button id="btn-add-url" class="btn-primary">Afegir</button>
+      </div>
+      <div class="results-layout">
+        <nav id="themes-list" class="themes-list" aria-label="Llista de categories"></nav>
+        <div id="shortcuts-display" class="shortcuts-display">
+          <p class="select-prompt">Selecciona una temàtica de l'esquerra per veure els accessos directes.</p>
+        </div>
+      </div>
+      <div id="pagination" class="pagination hidden" aria-label="Paginació de resultats">
+        <button id="btn-prev" class="btn-page" aria-label="Pàgina anterior">‹</button>
+        <span id="page-info" class="page-info">Pàgina 1 de 1</span>
+        <button id="btn-next" class="btn-page" aria-label="Pàgina següent">›</button>
+        <select id="page-size" class="page-size-select" aria-label="Elements per pàgina">
+          <option value="20">20</option>
+          <option value="50" selected>50</option>
+          <option value="100">100</option>
+        </select>
+      </div>
+    </section>
+  </main>
+  <div id="modal-reclasificar" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="Reclassificar accés directe">
+    <div class="modal-content">
+      <h3>Reclassificar accés directe</h3>
+      <p><strong>URL:</strong> <span id="modal-url"></span></p>
+      <p><strong>Categoria actual:</strong> <span id="modal-desde"></span></p>
+      <p><strong>Fitxer:</strong> <span id="modal-archivo"></span></p>
+      <div class="modal-field">
+        <label for="modal-categoria">Moure a:</label>
+        <select id="modal-categoria"></select>
+        <div id="modal-nueva-categoria-container" class="hidden" style="margin-top: 8px;">
+          <label for="modal-nueva-categoria">Nom de la nova categoria:</label>
+          <input type="text" id="modal-nueva-categoria" class="search-input uppercase" placeholder="EX: NOM DE LA CATEGORIA">
+        </div>
+      </div>
+      <p class="modal-note">El domini de la URL s'afegirà com a paraula clau a la nova categoria perquè futures classificacions siguin correctes.</p>
+      <div class="modal-actions">
+        <button id="btn-modal-cancelar" class="btn-secondary">Cancel·lar</button>
+        <button id="btn-modal-confirmar" class="btn-primary">Moure i actualitzar regles</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-renombrar" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="Renombrar categoria">
+    <div class="modal-content">
+      <h3>Renombrar categoria</h3>
+      <p>Nom actual: <strong id="rename-actual"></strong></p>
+      <div class="modal-field">
+        <label for="rename-nuevo">Nou nom:</label>
+        <input type="text" id="rename-nuevo" class="search-input uppercase" placeholder="NOU NOM">
+      </div>
+      <div class="modal-actions">
+        <button id="btn-rename-cancelar" class="btn-secondary">Cancel·lar</button>
+        <button id="btn-rename-confirmar" class="btn-primary">Renombrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-editar-nombre" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="Editar nom del marcador">
+    <div class="modal-content">
+      <h3>Editar nom del marcador</h3>
+      <p><strong>URL:</strong> <span id="editname-url"></span></p>
+      <div class="modal-field">
+        <label for="editname-input">Nou nom:</label>
+          <input type="text" id="editname-input" class="search-input uppercase" placeholder="NOM VISIBLE">
+      </div>
+      <div class="modal-actions">
+        <button id="btn-editname-cancelar" class="btn-secondary">Cancel·lar</button>
+        <button id="btn-editname-confirmar" class="btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-eliminar" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="Confirmar eliminació">
+    <div class="modal-content modal-eliminar-content">
+      <h3>🗑️ Eliminar marcador</h3>
+      <p>Estàs segur que vols eliminar aquest marcador?</p>
+      <p><strong>URL:</strong> <span id="eliminar-url"></span></p>
+      <p class="modal-note">Aquesta acció no es pot desfer.</p>
+      <div class="modal-actions">
+        <button id="btn-eliminar-cancelar" class="btn-secondary">Cancel·lar</button>
+        <button id="btn-eliminar-confirmar" class="btn-primary" style="background:linear-gradient(135deg, #ef4444, #dc2626);">Eliminar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-reiniciar" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="Confirmar reinici">
+    <div class="modal-content">
+      <h3 style="color:var(--error-color);">⚠️ Reiniciar totes les dades</h3>
+      <p>Aquesta acció eliminarà <strong>totes les URLs i categories personalitzades</strong> de forma permanent.</p>
+      <p>Escriu <strong style="color:var(--error-color);">REINICIAR</strong> al camp de sota per confirmar:</p>
+      <div class="modal-field">
+        <input type="text" id="reiniciar-confirm-input" class="search-input" placeholder="Escriu REINICIAR per confirmar" autocomplete="off">
+      </div>
+      <div class="modal-actions">
+        <button id="btn-reiniciar-cancelar" class="btn-secondary">Cancel·lar</button>
+        <button id="btn-reiniciar-confirmar" class="btn-primary" disabled style="background:linear-gradient(135deg, #ef4444, #dc2626);color:#fff;">Eliminar-ho tot</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-listado" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="Llistat d'URLs">
+    <div class="modal-content" style="max-width:800px;">
+      <h3 id="listado-titulo">Llistat d'URLs</h3>
+      <div id="listado-contenido" class="listado-contenido"></div>
+      <div class="modal-actions">
+        <button id="btn-listado-cerrar" class="btn-secondary">Tancar</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

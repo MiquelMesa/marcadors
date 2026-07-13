@@ -1,0 +1,1442 @@
+[
+  {
+    "categoria": "PER A IA",
+    "keywords": [
+      {
+        "texto": "chatgpt",
+        "peso": 3
+      },
+      {
+        "texto": "openai",
+        "peso": 3
+      },
+      {
+        "texto": "claude",
+        "peso": 3
+      },
+      {
+        "texto": "gemini",
+        "peso": 3
+      },
+      {
+        "texto": "deepseek",
+        "peso": 3
+      },
+      {
+        "texto": "copilot",
+        "peso": 3
+      },
+      {
+        "texto": "midjourney",
+        "peso": 3
+      },
+      {
+        "texto": "huggingface",
+        "peso": 3
+      },
+      {
+        "texto": "perplexity",
+        "peso": 3
+      },
+      {
+        "texto": "mistral",
+        "peso": 3
+      },
+      {
+        "texto": "ollama",
+        "peso": 3
+      },
+      {
+        "texto": "openrouter",
+        "peso": 3
+      },
+      {
+        "texto": "inteligencia artificial",
+        "peso": 3
+      },
+      {
+        "texto": "artificial",
+        "peso": 2
+      },
+      {
+        "texto": "llm",
+        "peso": 2
+      },
+      {
+        "texto": "modelo ia",
+        "peso": 2
+      },
+      {
+        "texto": "gpt",
+        "peso": 3
+      },
+      {
+        "texto": "ai studio",
+        "peso": 2
+      },
+      {
+        "texto": "leonardo",
+        "peso": 2
+      },
+      {
+        "texto": "open webui",
+        "peso": 3
+      },
+      {
+        "texto": "open pets",
+        "peso": 2
+      },
+      {
+        "texto": "webllm",
+        "peso": 2
+      },
+      {
+        "texto": "morphic",
+        "peso": 2
+      },
+      {
+        "texto": "juluis",
+        "peso": 2
+      },
+      {
+        "texto": "commandcode",
+        "peso": 3
+      },
+      {
+        "texto": "agentswarms",
+        "peso": 3
+      },
+      {
+        "texto": "dealsbe",
+        "peso": 3
+      },
+      {
+        "texto": "guidde",
+        "peso": 3
+      },
+      {
+        "texto": "tencent",
+        "peso": 3
+      },
+      {
+        "texto": "eldiarioia",
+        "peso": 3
+      },
+      {
+        "texto": "promptlibre",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "PROGRAMACIÓ",
+    "keywords": [
+      {
+        "texto": "github",
+        "peso": 3
+      },
+      {
+        "texto": "stackoverflow",
+        "peso": 3
+      },
+      {
+        "texto": "w3schools",
+        "peso": 3
+      },
+      {
+        "texto": "mdn",
+        "peso": 3
+      },
+      {
+        "texto": "developer",
+        "peso": 2
+      },
+      {
+        "texto": "typescript",
+        "peso": 3
+      },
+      {
+        "texto": "javascript",
+        "peso": 3
+      },
+      {
+        "texto": "python",
+        "peso": 3
+      },
+      {
+        "texto": "rust",
+        "peso": 3
+      },
+      {
+        "texto": "golang",
+        "peso": 3
+      },
+      {
+        "texto": "npm",
+        "peso": 2
+      },
+      {
+        "texto": "nodejs",
+        "peso": 3
+      },
+      {
+        "texto": "node.js",
+        "peso": 3
+      },
+      {
+        "texto": "react",
+        "peso": 3
+      },
+      {
+        "texto": "vue",
+        "peso": 3
+      },
+      {
+        "texto": "angular",
+        "peso": 3
+      },
+      {
+        "texto": "svelte",
+        "peso": 3
+      },
+      {
+        "texto": "html",
+        "peso": 2
+      },
+      {
+        "texto": "css",
+        "peso": 2
+      },
+      {
+        "texto": "api",
+        "peso": 2
+      },
+      {
+        "texto": "c#",
+        "peso": 3
+      },
+      {
+        "texto": "csharp",
+        "peso": 3
+      },
+      {
+        "texto": "php",
+        "peso": 3
+      },
+      {
+        "texto": "java",
+        "peso": 3
+      },
+      {
+        "texto": "framework",
+        "peso": 2
+      },
+      {
+        "texto": "codigo",
+        "peso": 2
+      },
+      {
+        "texto": "programacion",
+        "peso": 3
+      },
+      {
+        "texto": "programar",
+        "peso": 3
+      },
+      {
+        "texto": "code",
+        "peso": 2
+      },
+      {
+        "texto": "dev",
+        "peso": 2
+      },
+      {
+        "texto": "git",
+        "peso": 3
+      },
+      {
+        "texto": "blazor",
+        "peso": 3
+      },
+      {
+        "texto": "dotnet",
+        "peso": 3
+      },
+      {
+        "texto": "electron",
+        "peso": 3
+      },
+      {
+        "texto": "tauri",
+        "peso": 3
+      },
+      {
+        "texto": "astro",
+        "peso": 3
+      },
+      {
+        "texto": "tailwind",
+        "peso": 3
+      },
+      {
+        "texto": "bootstrap",
+        "peso": 2
+      },
+      {
+        "texto": "crud",
+        "peso": 3
+      },
+      {
+        "texto": "algoritmo",
+        "peso": 2
+      },
+      {
+        "texto": "autohotkey",
+        "peso": 2
+      }
+    ]
+  },
+  {
+    "categoria": "FORMACIÓ",
+    "keywords": [
+      {
+        "texto": "curso",
+        "peso": 3
+      },
+      {
+        "texto": "course",
+        "peso": 3
+      },
+      {
+        "texto": "coursera",
+        "peso": 3
+      },
+      {
+        "texto": "udemy",
+        "peso": 3
+      },
+      {
+        "texto": "learn",
+        "peso": 3
+      },
+      {
+        "texto": "aprender",
+        "peso": 3
+      },
+      {
+        "texto": "tutorial",
+        "peso": 3
+      },
+      {
+        "texto": "formacion",
+        "peso": 3
+      },
+      {
+        "texto": "clase",
+        "peso": 2
+      },
+      {
+        "texto": "class",
+        "peso": 2
+      },
+      {
+        "texto": "academia",
+        "peso": 3
+      },
+      {
+        "texto": "openlearning",
+        "peso": 2
+      },
+      {
+        "texto": "edx",
+        "peso": 3
+      },
+      {
+        "texto": "freecodecamp",
+        "peso": 3
+      },
+      {
+        "texto": "midudev",
+        "peso": 3
+      },
+      {
+        "texto": "bootcamp",
+        "peso": 3
+      },
+      {
+        "texto": "openbootcamp",
+        "peso": 3
+      },
+      {
+        "texto": "classcentral",
+        "peso": 3
+      },
+      {
+        "texto": "harvard",
+        "peso": 3
+      },
+      {
+        "texto": "stanford",
+        "peso": 3
+      },
+      {
+        "texto": "mit",
+        "peso": 3
+      },
+      {
+        "texto": "open course",
+        "peso": 3
+      },
+      {
+        "texto": "estudiar",
+        "peso": 2
+      },
+      {
+        "texto": "curs",
+        "peso": 2
+      },
+      {
+        "texto": "aprendepython",
+        "peso": 3
+      },
+      {
+        "texto": "agentswarms",
+        "peso": 3
+      },
+      {
+        "texto": "datacamp",
+        "peso": 3
+      },
+      {
+        "texto": "wuolah",
+        "peso": 3
+      },
+      {
+        "texto": "docsity",
+        "peso": 3
+      },
+      {
+        "texto": "github",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "BASE DE DADES",
+    "keywords": [
+      {
+        "texto": "sql",
+        "peso": 3
+      },
+      {
+        "texto": "mysql",
+        "peso": 3
+      },
+      {
+        "texto": "sqlserver",
+        "peso": 3
+      },
+      {
+        "texto": "mariadb",
+        "peso": 3
+      },
+      {
+        "texto": "postgresql",
+        "peso": 3
+      },
+      {
+        "texto": "postgre",
+        "peso": 3
+      },
+      {
+        "texto": "mongodb",
+        "peso": 3
+      },
+      {
+        "texto": "redis",
+        "peso": 3
+      },
+      {
+        "texto": "base de datos",
+        "peso": 3
+      },
+      {
+        "texto": "bbdd",
+        "peso": 3
+      },
+      {
+        "texto": "database",
+        "peso": 3
+      },
+      {
+        "texto": "sqlite",
+        "peso": 3
+      },
+      {
+        "texto": "cassandra",
+        "peso": 3
+      },
+      {
+        "texto": "supabase",
+        "peso": 3
+      },
+      {
+        "texto": "firebase",
+        "peso": 3
+      },
+      {
+        "texto": "chartdb",
+        "peso": 2
+      },
+      {
+        "texto": "db",
+        "peso": 1
+      },
+      {
+        "texto": "data",
+        "peso": 1
+      }
+    ]
+  },
+  {
+    "categoria": "RECURSOS EXCEL",
+    "keywords": [
+      {
+        "texto": "excel",
+        "peso": 3
+      },
+      {
+        "texto": "spreadsheet",
+        "peso": 3
+      },
+      {
+        "texto": "powerbi",
+        "peso": 3
+      },
+      {
+        "texto": "vba",
+        "peso": 3
+      },
+      {
+        "texto": "formulas",
+        "peso": 2
+      },
+      {
+        "texto": "spreadshee",
+        "peso": 2
+      },
+      {
+        "texto": "mrexcel",
+        "peso": 3
+      },
+      {
+        "texto": "xelplus",
+        "peso": 3
+      },
+      {
+        "texto": "power apps",
+        "peso": 2
+      },
+      {
+        "texto": "power platform",
+        "peso": 2
+      },
+      {
+        "texto": "office",
+        "peso": 1
+      },
+      {
+        "texto": "access",
+        "peso": 2
+      },
+      {
+        "texto": "eltiotech",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "RECURSOS DISSENY",
+    "keywords": [
+      {
+        "texto": "figma",
+        "peso": 3
+      },
+      {
+        "texto": "canva",
+        "peso": 3
+      },
+      {
+        "texto": "penpot",
+        "peso": 3
+      },
+      {
+        "texto": "diseño",
+        "peso": 3
+      },
+      {
+        "texto": "design",
+        "peso": 2
+      },
+      {
+        "texto": "ui",
+        "peso": 2
+      },
+      {
+        "texto": "ux",
+        "peso": 2
+      },
+      {
+        "texto": "icono",
+        "peso": 3
+      },
+      {
+        "texto": "icon",
+        "peso": 3
+      },
+      {
+        "texto": "color",
+        "peso": 2
+      },
+      {
+        "texto": "font",
+        "peso": 2
+      },
+      {
+        "texto": "ilustration",
+        "peso": 2
+      },
+      {
+        "texto": "ilustracion",
+        "peso": 2
+      },
+      {
+        "texto": "imagen",
+        "peso": 2
+      },
+      {
+        "texto": "foto",
+        "peso": 2
+      },
+      {
+        "texto": "palette",
+        "peso": 2
+      },
+      {
+        "texto": "logo",
+        "peso": 3
+      },
+      {
+        "texto": "svg",
+        "peso": 2
+      },
+      {
+        "texto": "png",
+        "peso": 2
+      },
+      {
+        "texto": "animacion",
+        "peso": 2
+      },
+      {
+        "texto": "video",
+        "peso": 2
+      },
+      {
+        "texto": "clip art",
+        "peso": 2
+      },
+      {
+        "texto": "storyset",
+        "peso": 2
+      },
+      {
+        "texto": "freepik",
+        "peso": 3
+      },
+      {
+        "texto": "pixabay",
+        "peso": 3
+      },
+      {
+        "texto": "unsplash",
+        "peso": 3
+      },
+      {
+        "texto": "lunacy",
+        "peso": 2
+      },
+      {
+        "texto": "fondos pantalla",
+        "peso": 2
+      },
+      {
+        "texto": "wallpaper",
+        "peso": 2
+      },
+      {
+        "texto": "retocar",
+        "peso": 2
+      },
+      {
+        "texto": "retoque",
+        "peso": 2
+      }
+    ]
+  },
+  {
+    "categoria": "TREBALL",
+    "keywords": [
+      {
+        "texto": "linkedin",
+        "peso": 3
+      },
+      {
+        "texto": "empleo",
+        "peso": 3
+      },
+      {
+        "texto": "freelance",
+        "peso": 3
+      },
+      {
+        "texto": "trabajo",
+        "peso": 3
+      },
+      {
+        "texto": "career",
+        "peso": 2
+      },
+      {
+        "texto": "upwork",
+        "peso": 3
+      },
+      {
+        "texto": "freelancer",
+        "peso": 3
+      },
+      {
+        "texto": "hiring",
+        "peso": 2
+      },
+      {
+        "texto": "indeed",
+        "peso": 3
+      },
+      {
+        "texto": "remote",
+        "peso": 2
+      },
+      {
+        "texto": "job",
+        "peso": 2
+      },
+      {
+        "texto": "curriculum",
+        "peso": 2
+      },
+      {
+        "texto": "cv",
+        "peso": 2
+      },
+      {
+        "texto": "resume",
+        "peso": 2
+      },
+      {
+        "texto": "interview",
+        "peso": 2
+      },
+      {
+        "texto": "portfolio",
+        "peso": 2
+      },
+      {
+        "texto": "portafolio",
+        "peso": 2
+      },
+      {
+        "texto": "voluntariado",
+        "peso": 2
+      },
+      {
+        "texto": "voluntari",
+        "peso": 2
+      }
+    ]
+  },
+  {
+    "categoria": "SOFTWARE I EINES",
+    "keywords": [
+      {
+        "texto": "software",
+        "peso": 2
+      },
+      {
+        "texto": "freeware",
+        "peso": 3
+      },
+      {
+        "texto": "portable",
+        "peso": 3
+      },
+      {
+        "texto": "windows",
+        "peso": 2
+      },
+      {
+        "texto": "macos",
+        "peso": 2
+      },
+      {
+        "texto": "linux",
+        "peso": 3
+      },
+      {
+        "texto": "ubuntu",
+        "peso": 3
+      },
+      {
+        "texto": "docker",
+        "peso": 3
+      },
+      {
+        "texto": "hosting",
+        "peso": 3
+      },
+      {
+        "texto": "vercel",
+        "peso": 3
+      },
+      {
+        "texto": "netlify",
+        "peso": 3
+      },
+      {
+        "texto": "hostinger",
+        "peso": 3
+      },
+      {
+        "texto": "n8n",
+        "peso": 3
+      },
+      {
+        "texto": "make.com",
+        "peso": 3
+      },
+      {
+        "texto": "zoho",
+        "peso": 2
+      },
+      {
+        "texto": "vps",
+        "peso": 2
+      },
+      {
+        "texto": "cloud",
+        "peso": 2
+      },
+      {
+        "texto": "dominio",
+        "peso": 2
+      },
+      {
+        "texto": "devops",
+        "peso": 3
+      },
+      {
+        "texto": "kubernetes",
+        "peso": 3
+      },
+      {
+        "texto": "jenkins",
+        "peso": 2
+      },
+      {
+        "texto": "thecoolcaseconverter",
+        "peso": 3
+      },
+      {
+        "texto": "it-tools",
+        "peso": 3
+      },
+      {
+        "texto": "fcksignups",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "NOTÍCIES",
+    "keywords": [
+      {
+        "texto": "noticias",
+        "peso": 3
+      },
+      {
+        "texto": "news",
+        "peso": 3
+      },
+      {
+        "texto": "periodico",
+        "peso": 3
+      },
+      {
+        "texto": "elpais",
+        "peso": 3
+      },
+      {
+        "texto": "elmundo",
+        "peso": 3
+      },
+      {
+        "texto": "nytimes",
+        "peso": 3
+      },
+      {
+        "texto": "cnn",
+        "peso": 3
+      },
+      {
+        "texto": "reuters",
+        "peso": 3
+      },
+      {
+        "texto": "revista",
+        "peso": 3
+      },
+      {
+        "texto": "magazine",
+        "peso": 2
+      },
+      {
+        "texto": "techspot",
+        "peso": 2
+      },
+      {
+        "texto": "wired",
+        "peso": 2
+      },
+      {
+        "texto": "tecnologia",
+        "peso": 2
+      },
+      {
+        "texto": "diario",
+        "peso": 2
+      },
+      {
+        "texto": "blog",
+        "peso": 1
+      },
+      {
+        "texto": "tutiempo",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "DOCUMENTACIÓ",
+    "keywords": [
+      {
+        "texto": "docs",
+        "peso": 3
+      },
+      {
+        "texto": "manual",
+        "peso": 3
+      },
+      {
+        "texto": "documentacion",
+        "peso": 3
+      },
+      {
+        "texto": "documentation",
+        "peso": 3
+      },
+      {
+        "texto": "referencia",
+        "peso": 3
+      },
+      {
+        "texto": "wiki",
+        "peso": 3
+      },
+      {
+        "texto": "wikipedia",
+        "peso": 3
+      },
+      {
+        "texto": "howto",
+        "peso": 2
+      },
+      {
+        "texto": "guide",
+        "peso": 2
+      },
+      {
+        "texto": "apuntes",
+        "peso": 2
+      },
+      {
+        "texto": "tutorial point",
+        "peso": 2
+      },
+      {
+        "texto": "quick reference",
+        "peso": 2
+      },
+      {
+        "texto": "wikihow",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "VIDEOJOCS",
+    "keywords": [
+      {
+        "texto": "playstation",
+        "peso": 3
+      },
+      {
+        "texto": "xbox",
+        "peso": 3
+      },
+      {
+        "texto": "nintendo",
+        "peso": 3
+      },
+      {
+        "texto": "steam",
+        "peso": 3
+      },
+      {
+        "texto": "game",
+        "peso": 2
+      },
+      {
+        "texto": "videojuego",
+        "peso": 3
+      },
+      {
+        "texto": "gamer",
+        "peso": 2
+      },
+      {
+        "texto": "epicgames",
+        "peso": 3
+      },
+      {
+        "texto": "itch.io",
+        "peso": 2
+      },
+      {
+        "texto": "minecraft",
+        "peso": 3
+      },
+      {
+        "texto": "juego",
+        "peso": 2
+      },
+      {
+        "texto": "retro",
+        "peso": 2
+      }
+    ]
+  },
+  {
+    "categoria": "MÚSICA I ÀUDIO",
+    "keywords": [
+      {
+        "texto": "music",
+        "peso": 3
+      },
+      {
+        "texto": "spotify",
+        "peso": 3
+      },
+      {
+        "texto": "soundcloud",
+        "peso": 3
+      },
+      {
+        "texto": "mp3",
+        "peso": 3
+      },
+      {
+        "texto": "cancion",
+        "peso": 2
+      },
+      {
+        "texto": "radio",
+        "peso": 3
+      },
+      {
+        "texto": "dj",
+        "peso": 3
+      },
+      {
+        "texto": "song",
+        "peso": 2
+      },
+      {
+        "texto": "audiolibro",
+        "peso": 2
+      },
+      {
+        "texto": "ivoox",
+        "peso": 3
+      },
+      {
+        "texto": "podcast",
+        "peso": 2
+      },
+      {
+        "texto": "sonido",
+        "peso": 2
+      },
+      {
+        "texto": "audio",
+        "peso": 2
+      },
+      {
+        "texto": "transcribe",
+        "peso": 2
+      }
+    ]
+  },
+  {
+    "categoria": "XARXES SOCIALS",
+    "keywords": [
+      {
+        "texto": "reddit",
+        "peso": 3
+      },
+      {
+        "texto": "quora",
+        "peso": 3
+      },
+      {
+        "texto": "facebook",
+        "peso": 3
+      },
+      {
+        "texto": "instagram",
+        "peso": 3
+      },
+      {
+        "texto": "twitter",
+        "peso": 3
+      },
+      {
+        "texto": "x.com",
+        "peso": 2
+      },
+      {
+        "texto": "tiktok",
+        "peso": 2
+      },
+      {
+        "texto": "youtube",
+        "peso": 3
+      },
+      {
+        "texto": "telegram",
+        "peso": 2
+      },
+      {
+        "texto": "discord",
+        "peso": 2
+      },
+      {
+        "texto": "foro",
+        "peso": 1
+      },
+      {
+        "texto": "comunidad",
+        "peso": 1
+      }
+    ]
+  },
+  {
+    "categoria": "CORRECTORS",
+    "keywords": [
+      {
+        "texto": "corrector",
+        "peso": 3
+      },
+      {
+        "texto": "spellcheck",
+        "peso": 3
+      },
+      {
+        "texto": "ortografia",
+        "peso": 3
+      },
+      {
+        "texto": "rae",
+        "peso": 3
+      },
+      {
+        "texto": "gramatica",
+        "peso": 3
+      },
+      {
+        "texto": "diccionario",
+        "peso": 3
+      },
+      {
+        "texto": "catala",
+        "peso": 2
+      },
+      {
+        "texto": "castellano",
+        "peso": 2
+      },
+      {
+        "texto": "ingles",
+        "peso": 2
+      },
+      {
+        "texto": "aleman",
+        "peso": 2
+      },
+      {
+        "texto": "idioma",
+        "peso": 1
+      },
+      {
+        "texto": "traducir",
+        "peso": 2
+      }
+    ]
+  },
+  {
+    "categoria": "UTILITATS WEB",
+    "keywords": [
+      {
+        "texto": "online tools",
+        "peso": 3
+      },
+      {
+        "texto": "herramientas",
+        "peso": 2
+      },
+      {
+        "texto": "tools",
+        "peso": 2
+      },
+      {
+        "texto": "free for developers",
+        "peso": 3
+      },
+      {
+        "texto": "free for dev",
+        "peso": 3
+      },
+      {
+        "texto": "convertir",
+        "peso": 2
+      },
+      {
+        "texto": "convert",
+        "peso": 2
+      },
+      {
+        "texto": "generador",
+        "peso": 2
+      },
+      {
+        "texto": "generator",
+        "peso": 2
+      },
+      {
+        "texto": "pdf",
+        "peso": 2
+      },
+      {
+        "texto": "json",
+        "peso": 2
+      },
+      {
+        "texto": "regex",
+        "peso": 2
+      },
+      {
+        "texto": "compilador online",
+        "peso": 2
+      },
+      {
+        "texto": "online compiler",
+        "peso": 2
+      },
+      {
+        "texto": "sandbox",
+        "peso": 2
+      },
+      {
+        "texto": "playground",
+        "peso": 2
+      },
+      {
+        "texto": "codepen",
+        "peso": 3
+      },
+      {
+        "texto": "piliapp",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "LECTURA I CULTURA",
+    "keywords": [
+      {
+        "texto": "libro",
+        "peso": 3
+      },
+      {
+        "texto": "book",
+        "peso": 3
+      },
+      {
+        "texto": "biblioteca",
+        "peso": 2
+      },
+      {
+        "texto": "literatura",
+        "peso": 2
+      },
+      {
+        "texto": "filosofia",
+        "peso": 3
+      },
+      {
+        "texto": "historia",
+        "peso": 3
+      },
+      {
+        "texto": "cultura",
+        "peso": 2
+      },
+      {
+        "texto": "biografia",
+        "peso": 2
+      },
+      {
+        "texto": "open culture",
+        "peso": 2
+      },
+      {
+        "texto": "enciclopedia",
+        "peso": 2
+      },
+      {
+        "texto": "archivo",
+        "peso": 1
+      },
+      {
+        "texto": "internet archive",
+        "peso": 2
+      },
+      {
+        "texto": "infolibros",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "LLIBRES ELECTRÒNICS",
+    "keywords": [
+      {
+        "texto": "ebooklibres",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "FAVORITS",
+    "keywords": []
+  },
+  {
+    "categoria": "CALENDARIS",
+    "keywords": [
+      {
+        "texto": "ecampmany",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "REVISTES",
+    "keywords": [
+      {
+        "texto": "iquiosc",
+        "peso": 3
+      },
+      {
+        "texto": "superprof",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "IDIOMES",
+    "keywords": [
+      {
+        "texto": "efset",
+        "peso": 3
+      },
+      {
+        "texto": "preply",
+        "peso": 3
+      },
+      {
+        "texto": "curso-ingles",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "VOLUNTARIAT",
+    "keywords": [
+      {
+        "texto": "cruzroja",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "APUNTS",
+    "keywords": [
+      {
+        "texto": "docsity",
+        "peso": 3
+      },
+      {
+        "texto": "wuolah",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "RECURSOS INTERNET",
+    "keywords": [
+      {
+        "texto": "keyurmor",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "PSICOLOGIA",
+    "keywords": [
+      {
+        "texto": "silviacongost",
+        "peso": 3
+      }
+    ]
+  }
+]
