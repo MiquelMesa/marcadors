@@ -125,6 +125,114 @@
       {
         "texto": "promptlibre",
         "peso": 3
+      },
+      {
+        "texto": "lexica",
+        "peso": 3
+      },
+      {
+        "texto": "skills",
+        "peso": 3
+      },
+      {
+        "texto": "codewiki",
+        "peso": 3
+      },
+      {
+        "texto": "opencode",
+        "peso": 3
+      },
+      {
+        "texto": "cline",
+        "peso": 3
+      },
+      {
+        "texto": "nvidia",
+        "peso": 3
+      },
+      {
+        "texto": "duckduckgo",
+        "peso": 3
+      },
+      {
+        "texto": "canirun",
+        "peso": 3
+      },
+      {
+        "texto": "publicapis",
+        "peso": 3
+      },
+      {
+        "texto": "google",
+        "peso": 3
+      },
+      {
+        "texto": "mammouth",
+        "peso": 3
+      },
+      {
+        "texto": "abacus",
+        "peso": 3
+      },
+      {
+        "texto": "kupid",
+        "peso": 3
+      },
+      {
+        "texto": "v0",
+        "peso": 3
+      },
+      {
+        "texto": "poe",
+        "peso": 3
+      },
+      {
+        "texto": "giz",
+        "peso": 3
+      },
+      {
+        "texto": "chatgot",
+        "peso": 3
+      },
+      {
+        "texto": "you",
+        "peso": 3
+      },
+      {
+        "texto": "devv",
+        "peso": 3
+      },
+      {
+        "texto": "bulkimagegeneration",
+        "peso": 3
+      },
+      {
+        "texto": "aifindy",
+        "peso": 3
+      },
+      {
+        "texto": "sulat",
+        "peso": 3
+      },
+      {
+        "texto": "bolt",
+        "peso": 3
+      },
+      {
+        "texto": "creen",
+        "peso": 3
+      },
+      {
+        "texto": "academiartificial",
+        "peso": 3
+      },
+      {
+        "texto": "theresanaiforthat",
+        "peso": 3
+      },
+      {
+        "texto": "kimi",
+        "peso": 3
       }
     ]
   },
@@ -294,11 +402,23 @@
       {
         "texto": "autohotkey",
         "peso": 2
+      },
+      {
+        "texto": "monodevelop",
+        "peso": 3
+      },
+      {
+        "texto": "coolify",
+        "peso": 3
+      },
+      {
+        "texto": "google",
+        "peso": 3
       }
     ]
   },
   {
-    "categoria": "FORMACIÓ",
+    "categoria": "FORMACIÓ EN IT",
     "keywords": [
       {
         "texto": "curso",
@@ -419,11 +539,99 @@
       {
         "texto": "github",
         "peso": 3
+      },
+      {
+        "texto": "superprof",
+        "peso": 3
+      },
+      {
+        "texto": "rust-lang",
+        "peso": 3
+      },
+      {
+        "texto": "upc",
+        "peso": 3
+      },
+      {
+        "texto": "guru99",
+        "peso": 3
+      },
+      {
+        "texto": "orientanet",
+        "peso": 3
+      },
+      {
+        "texto": "uoc",
+        "peso": 3
+      },
+      {
+        "texto": "educaweb",
+        "peso": 3
+      },
+      {
+        "texto": "peretarres",
+        "peso": 3
+      },
+      {
+        "texto": "brave",
+        "peso": 3
+      },
+      {
+        "texto": "faztweb",
+        "peso": 3
+      },
+      {
+        "texto": "aprendergratis",
+        "peso": 3
+      },
+      {
+        "texto": "fullstackopen",
+        "peso": 3
+      },
+      {
+        "texto": "theodinproject",
+        "peso": 3
+      },
+      {
+        "texto": "tutorialspoint",
+        "peso": 3
+      },
+      {
+        "texto": "abrirllave",
+        "peso": 3
+      },
+      {
+        "texto": "open",
+        "peso": 3
+      },
+      {
+        "texto": "netmentor",
+        "peso": 3
+      },
+      {
+        "texto": "keepcoding",
+        "peso": 3
+      },
+      {
+        "texto": "estudyando",
+        "peso": 3
+      },
+      {
+        "texto": "microsoft",
+        "peso": 3
+      },
+      {
+        "texto": "codegroupie",
+        "peso": 3
+      },
+      {
+        "texto": "frontendmentor",
+        "peso": 3
       }
     ]
   },
   {
-    "categoria": "BASE DE DADES",
+    "categoria": "TOT BASE DADES",
     "keywords": [
       {
         "texto": "sql",
@@ -496,6 +704,102 @@
       {
         "texto": "data",
         "peso": 1
+      },
+      {
+        "texto": "runsql",
+        "peso": 3
+      },
+      {
+        "texto": "geeksforgeeks",
+        "peso": 3
+      },
+      {
+        "texto": "querythemurder",
+        "peso": 3
+      },
+      {
+        "texto": "sql-easy",
+        "peso": 3
+      },
+      {
+        "texto": "accessdatabasetutorial",
+        "peso": 3
+      },
+      {
+        "texto": "sqlzoo",
+        "peso": 3
+      },
+      {
+        "texto": "sqlnoir",
+        "peso": 3
+      },
+      {
+        "texto": "drawdb",
+        "peso": 3
+      },
+      {
+        "texto": "phpliteadmin",
+        "peso": 3
+      },
+      {
+        "texto": "duckduckgo",
+        "peso": 3
+      },
+      {
+        "texto": "base44",
+        "peso": 3
+      },
+      {
+        "texto": "google",
+        "peso": 3
+      },
+      {
+        "texto": "mdbopener",
+        "peso": 3
+      },
+      {
+        "texto": "dbfront",
+        "peso": 3
+      },
+      {
+        "texto": "oracle",
+        "peso": 3
+      },
+      {
+        "texto": "thectoclub",
+        "peso": 3
+      },
+      {
+        "texto": "learnsql",
+        "peso": 3
+      },
+      {
+        "texto": "sql-practice",
+        "peso": 3
+      },
+      {
+        "texto": "harvard",
+        "peso": 3
+      },
+      {
+        "texto": "sqlbolt",
+        "peso": 3
+      },
+      {
+        "texto": "amaza-ing",
+        "peso": 3
+      },
+      {
+        "texto": "github",
+        "peso": 3
+      },
+      {
+        "texto": "knightlab",
+        "peso": 3
+      },
+      {
+        "texto": "tabularis",
+        "peso": 3
       }
     ]
   },
@@ -553,11 +857,43 @@
       {
         "texto": "eltiotech",
         "peso": 3
+      },
+      {
+        "texto": "officefacil",
+        "peso": 3
+      },
+      {
+        "texto": "youtube",
+        "peso": 3
+      },
+      {
+        "texto": "microsoft",
+        "peso": 3
+      },
+      {
+        "texto": "aprendergratis",
+        "peso": 3
+      },
+      {
+        "texto": "buscarv",
+        "peso": 3
+      },
+      {
+        "texto": "myonlinetraininghub",
+        "peso": 3
+      },
+      {
+        "texto": "excelfull",
+        "peso": 3
+      },
+      {
+        "texto": "ayudaexcel",
+        "peso": 3
       }
     ]
   },
   {
-    "categoria": "RECURSOS DISSENY",
+    "categoria": "TOT DISSENY WEB",
     "keywords": [
       {
         "texto": "figma",
@@ -682,6 +1018,178 @@
       {
         "texto": "retoque",
         "peso": 2
+      },
+      {
+        "texto": "github",
+        "peso": 3
+      },
+      {
+        "texto": "wasp",
+        "peso": 3
+      },
+      {
+        "texto": "rawpixel",
+        "peso": 3
+      },
+      {
+        "texto": "cybrarist",
+        "peso": 3
+      },
+      {
+        "texto": "google",
+        "peso": 3
+      },
+      {
+        "texto": "goto",
+        "peso": 3
+      },
+      {
+        "texto": "visme",
+        "peso": 3
+      },
+      {
+        "texto": "postimages",
+        "peso": 3
+      },
+      {
+        "texto": "neocities",
+        "peso": 3
+      },
+      {
+        "texto": "bitifet",
+        "peso": 3
+      },
+      {
+        "texto": "lovable",
+        "peso": 3
+      },
+      {
+        "texto": "tablericons",
+        "peso": 3
+      },
+      {
+        "texto": "simpleicons",
+        "peso": 3
+      },
+      {
+        "texto": "responsively",
+        "peso": 3
+      },
+      {
+        "texto": "domini",
+        "peso": 3
+      },
+      {
+        "texto": "qarmy",
+        "peso": 3
+      },
+      {
+        "texto": "boilerplatelist",
+        "peso": 3
+      },
+      {
+        "texto": "odoo",
+        "peso": 3
+      },
+      {
+        "texto": "shipixen",
+        "peso": 3
+      },
+      {
+        "texto": "site123",
+        "peso": 3
+      },
+      {
+        "texto": "jekyllrb",
+        "peso": 3
+      },
+      {
+        "texto": "veryicon",
+        "peso": 3
+      },
+      {
+        "texto": "icons8",
+        "peso": 3
+      },
+      {
+        "texto": "animatedicons",
+        "peso": 3
+      },
+      {
+        "texto": "tabler",
+        "peso": 3
+      },
+      {
+        "texto": "yesicon",
+        "peso": 3
+      },
+      {
+        "texto": "iconduck",
+        "peso": 3
+      },
+      {
+        "texto": "undraw",
+        "peso": 3
+      },
+      {
+        "texto": "heroicons",
+        "peso": 3
+      },
+      {
+        "texto": "getbootstrap",
+        "peso": 3
+      },
+      {
+        "texto": "bentogrids",
+        "peso": 3
+      },
+      {
+        "texto": "penguinui",
+        "peso": 3
+      },
+      {
+        "texto": "uiverse",
+        "peso": 3
+      },
+      {
+        "texto": "colorsandfonts",
+        "peso": 3
+      },
+      {
+        "texto": "tradingview",
+        "peso": 3
+      },
+      {
+        "texto": "webcatalog",
+        "peso": 3
+      },
+      {
+        "texto": "calltoinspiration",
+        "peso": 3
+      },
+      {
+        "texto": "ibelick",
+        "peso": 3
+      },
+      {
+        "texto": "wolfdisenoweb",
+        "peso": 3
+      },
+      {
+        "texto": "vecteezy",
+        "peso": 3
+      },
+      {
+        "texto": "netlify",
+        "peso": 3
+      },
+      {
+        "texto": "ui-layouts",
+        "peso": 3
+      },
+      {
+        "texto": "gamma",
+        "peso": 3
       }
     ]
   },
@@ -763,11 +1271,27 @@
       {
         "texto": "voluntari",
         "peso": 2
+      },
+      {
+        "texto": "tecnoempleo",
+        "peso": 3
+      },
+      {
+        "texto": "simplify",
+        "peso": 3
+      },
+      {
+        "texto": "trabajarporelmundo",
+        "peso": 3
+      },
+      {
+        "texto": "textbroker",
+        "peso": 3
       }
     ]
   },
   {
-    "categoria": "SOFTWARE I EINES",
+    "categoria": "FREE SOFTWARE",
     "keywords": [
       {
         "texto": "software",
@@ -864,6 +1388,58 @@
       {
         "texto": "fcksignups",
         "peso": 3
+      },
+      {
+        "texto": "com",
+        "peso": 3
+      },
+      {
+        "texto": "codeberg",
+        "peso": 3
+      },
+      {
+        "texto": "opensource",
+        "peso": 3
+      },
+      {
+        "texto": "the-sz",
+        "peso": 3
+      },
+      {
+        "texto": "sordum",
+        "peso": 3
+      },
+      {
+        "texto": "fosshub",
+        "peso": 3
+      },
+      {
+        "texto": "xtremedownloadmanager",
+        "peso": 3
+      },
+      {
+        "texto": "opencut",
+        "peso": 3
+      },
+      {
+        "texto": "whonix",
+        "peso": 3
+      },
+      {
+        "texto": "wetransfer",
+        "peso": 3
+      },
+      {
+        "texto": "custom-cursor",
+        "peso": 3
+      },
+      {
+        "texto": "adobe",
+        "peso": 3
+      },
+      {
+        "texto": "microsoft",
+        "peso": 3
       }
     ]
   },
@@ -937,7 +1513,7 @@
     ]
   },
   {
-    "categoria": "DOCUMENTACIÓ",
+    "categoria": "GUIES",
     "keywords": [
       {
         "texto": "docs",
@@ -989,6 +1565,30 @@
       },
       {
         "texto": "wikihow",
+        "peso": 3
+      },
+      {
+        "texto": "hadsonpar",
+        "peso": 3
+      },
+      {
+        "texto": "microsoft",
+        "peso": 3
+      },
+      {
+        "texto": "coderivers",
+        "peso": 3
+      },
+      {
+        "texto": "digitalgrow",
+        "peso": 3
+      },
+      {
+        "texto": "github",
+        "peso": 3
+      },
+      {
+        "texto": "vercel",
         "peso": 3
       }
     ]
@@ -1043,11 +1643,15 @@
       {
         "texto": "retro",
         "peso": 2
+      },
+      {
+        "texto": "reddit",
+        "peso": 3
       }
     ]
   },
   {
-    "categoria": "MÚSICA I ÀUDIO",
+    "categoria": "TOT PER MÚSICA",
     "keywords": [
       {
         "texto": "music",
@@ -1104,6 +1708,14 @@
       {
         "texto": "transcribe",
         "peso": 2
+      },
+      {
+        "texto": "accuradio",
+        "peso": 3
+      },
+      {
+        "texto": "youtube",
+        "peso": 3
       }
     ]
   },
@@ -1157,11 +1769,27 @@
       {
         "texto": "comunidad",
         "peso": 1
+      },
+      {
+        "texto": "tumblr",
+        "peso": 3
+      },
+      {
+        "texto": "wikihow",
+        "peso": 3
+      },
+      {
+        "texto": "4chan",
+        "peso": 3
+      },
+      {
+        "texto": "alternativeto",
+        "peso": 3
       }
     ]
   },
   {
-    "categoria": "CORRECTORS",
+    "categoria": "TOT CATALÀ",
     "keywords": [
       {
         "texto": "corrector",
@@ -1210,11 +1838,23 @@
       {
         "texto": "traducir",
         "peso": 2
+      },
+      {
+        "texto": "languagetool",
+        "peso": 3
+      },
+      {
+        "texto": "gencat",
+        "peso": 3
+      },
+      {
+        "texto": "softcatala",
+        "peso": 3
       }
     ]
   },
   {
-    "categoria": "UTILITATS WEB",
+    "categoria": "LLISTES RECURSOS",
     "keywords": [
       {
         "texto": "online tools",
@@ -1287,6 +1927,70 @@
       {
         "texto": "piliapp",
         "peso": 3
+      },
+      {
+        "texto": "github",
+        "peso": 3
+      },
+      {
+        "texto": "windy",
+        "peso": 3
+      },
+      {
+        "texto": "mega",
+        "peso": 3
+      },
+      {
+        "texto": "haveibeenpwned",
+        "peso": 3
+      },
+      {
+        "texto": "public",
+        "peso": 3
+      },
+      {
+        "texto": "it-tools",
+        "peso": 3
+      },
+      {
+        "texto": "rapidtables",
+        "peso": 3
+      },
+      {
+        "texto": "roadmap",
+        "peso": 3
+      },
+      {
+        "texto": "pcf",
+        "peso": 3
+      },
+      {
+        "texto": "pctools",
+        "peso": 3
+      },
+      {
+        "texto": "sonidosmp3gratis",
+        "peso": 3
+      },
+      {
+        "texto": "appydev",
+        "peso": 3
+      },
+      {
+        "texto": "free-for",
+        "peso": 3
+      },
+      {
+        "texto": "libhunt",
+        "peso": 3
+      },
+      {
+        "texto": "fontmeme",
+        "peso": 3
+      },
+      {
+        "texto": "pages",
+        "peso": 3
       }
     ]
   },
@@ -1353,18 +2057,123 @@
       {
         "texto": "ebooklibres",
         "peso": 3
+      },
+      {
+        "texto": "sololibros",
+        "peso": 3
+      },
+      {
+        "texto": "elejandria",
+        "peso": 3
+      },
+      {
+        "texto": "ebiblioteca",
+        "peso": 3
+      },
+      {
+        "texto": "educaciontrespuntocero",
+        "peso": 3
+      },
+      {
+        "texto": "llibresdigitals",
+        "peso": 3
+      },
+      {
+        "texto": "wikisource",
+        "peso": 3
+      },
+      {
+        "texto": "epublibre",
+        "peso": 3
+      },
+      {
+        "texto": "gutenberg",
+        "peso": 3
+      },
+      {
+        "texto": "comicbookplus",
+        "peso": 3
+      },
+      {
+        "texto": "smashwords",
+        "peso": 3
+      },
+      {
+        "texto": "onlineprogrammingbooks",
+        "peso": 3
+      },
+      {
+        "texto": "zoboko",
+        "peso": 3
+      },
+      {
+        "texto": "pdfbooksworld",
+        "peso": 3
+      },
+      {
+        "texto": "webs",
+        "peso": 3
+      },
+      {
+        "texto": "lectulandia",
+        "peso": 3
       }
     ]
   },
   {
     "categoria": "FAVORITS",
-    "keywords": []
+    "keywords": [
+      {
+        "texto": "tumblr",
+        "peso": 3
+      },
+      {
+        "texto": "learnsql",
+        "peso": 3
+      },
+      {
+        "texto": "udemy",
+        "peso": 3
+      },
+      {
+        "texto": "site",
+        "peso": 3
+      },
+      {
+        "texto": "fontmeme",
+        "peso": 3
+      }
+    ]
   },
   {
     "categoria": "CALENDARIS",
     "keywords": [
       {
         "texto": "ecampmany",
+        "peso": 3
+      },
+      {
+        "texto": "webcal",
+        "peso": 3
+      },
+      {
+        "texto": "santopedia",
+        "peso": 3
+      },
+      {
+        "texto": "icalendario",
+        "peso": 3
+      },
+      {
+        "texto": "elplural",
+        "peso": 3
+      },
+      {
+        "texto": "windy",
+        "peso": 3
+      },
+      {
+        "texto": "asciimoon",
         "peso": 3
       }
     ]
@@ -1378,6 +2187,138 @@
       },
       {
         "texto": "superprof",
+        "peso": 3
+      },
+      {
+        "texto": "20minutos",
+        "peso": 3
+      },
+      {
+        "texto": "freecodecamp",
+        "peso": 3
+      },
+      {
+        "texto": "illustrationhistory",
+        "peso": 3
+      },
+      {
+        "texto": "vivaldi",
+        "peso": 3
+      },
+      {
+        "texto": "publicdomainreview",
+        "peso": 3
+      },
+      {
+        "texto": "humoristan",
+        "peso": 3
+      },
+      {
+        "texto": "monoskop",
+        "peso": 3
+      },
+      {
+        "texto": "descifrandolaguerra",
+        "peso": 3
+      },
+      {
+        "texto": "brillandoenlaoscuridad",
+        "peso": 3
+      },
+      {
+        "texto": "soloprogramadores",
+        "peso": 3
+      },
+      {
+        "texto": "elordenmundial",
+        "peso": 3
+      },
+      {
+        "texto": "winworldpc",
+        "peso": 3
+      },
+      {
+        "texto": "respontodo",
+        "peso": 3
+      },
+      {
+        "texto": "openculture",
+        "peso": 3
+      },
+      {
+        "texto": "oldbookillustrations",
+        "peso": 3
+      },
+      {
+        "texto": "microsofters",
+        "peso": 3
+      },
+      {
+        "texto": "clubdelecturas",
+        "peso": 3
+      },
+      {
+        "texto": "mcnbiografias",
+        "peso": 3
+      },
+      {
+        "texto": "softzone",
+        "peso": 3
+      },
+      {
+        "texto": "xda-developers",
+        "peso": 3
+      },
+      {
+        "texto": "windowsreport",
+        "peso": 3
+      },
+      {
+        "texto": "muycomputer",
+        "peso": 3
+      },
+      {
+        "texto": "pureinfotech",
+        "peso": 3
+      },
+      {
+        "texto": "windowslatest",
+        "peso": 3
+      },
+      {
+        "texto": "elsoftwarelibre",
+        "peso": 3
+      },
+      {
+        "texto": "softandapps",
+        "peso": 3
+      },
+      {
+        "texto": "todo-frases",
+        "peso": 3
+      },
+      {
+        "texto": "aprenderlinux",
+        "peso": 3
+      },
+      {
+        "texto": "ottorinobruni",
+        "peso": 3
+      },
+      {
+        "texto": "historiaeweb",
+        "peso": 3
+      },
+      {
+        "texto": "trasteandoenlaescuela",
+        "peso": 3
+      },
+      {
+        "texto": "boredom-at-work",
+        "peso": 3
+      },
+      {
+        "texto": "lileks",
         "peso": 3
       }
     ]
@@ -1395,6 +2336,38 @@
       },
       {
         "texto": "curso-ingles",
+        "peso": 3
+      },
+      {
+        "texto": "lengualytics",
+        "peso": 3
+      },
+      {
+        "texto": "desafiolatam",
+        "peso": 3
+      },
+      {
+        "texto": "conquerlanguages",
+        "peso": 3
+      },
+      {
+        "texto": "youtube",
+        "peso": 3
+      },
+      {
+        "texto": "busuu",
+        "peso": 3
+      },
+      {
+        "texto": "co",
+        "peso": 3
+      },
+      {
+        "texto": "freecodecamp",
+        "peso": 3
+      },
+      {
+        "texto": "reddit",
         "peso": 3
       }
     ]
@@ -1422,10 +2395,190 @@
     ]
   },
   {
-    "categoria": "RECURSOS INTERNET",
+    "categoria": "EINES SOBRE WEB",
     "keywords": [
       {
         "texto": "keyurmor",
+        "peso": 3
+      },
+      {
+        "texto": "bentopdf",
+        "peso": 3
+      },
+      {
+        "texto": "paperknife",
+        "peso": 3
+      },
+      {
+        "texto": "nosignups",
+        "peso": 3
+      },
+      {
+        "texto": "toolsatzero",
+        "peso": 3
+      },
+      {
+        "texto": "github",
+        "peso": 3
+      },
+      {
+        "texto": "netlify",
+        "peso": 3
+      },
+      {
+        "texto": "zenwebx",
+        "peso": 3
+      },
+      {
+        "texto": "iloveimg",
+        "peso": 3
+      },
+      {
+        "texto": "fontmeme",
+        "peso": 3
+      },
+      {
+        "texto": "windy",
+        "peso": 3
+      },
+      {
+        "texto": "asciimoon",
+        "peso": 3
+      },
+      {
+        "texto": "virtualosmuseum",
+        "peso": 3
+      },
+      {
+        "texto": "libhunt",
+        "peso": 3
+      },
+      {
+        "texto": "free-for",
+        "peso": 3
+      },
+      {
+        "texto": "appydev",
+        "peso": 3
+      },
+      {
+        "texto": "webptojpg",
+        "peso": 3
+      },
+      {
+        "texto": "visualstudio",
+        "peso": 3
+      },
+      {
+        "texto": "toolkittext",
+        "peso": 3
+      },
+      {
+        "texto": "todo-frases",
+        "peso": 3
+      },
+      {
+        "texto": "tldraw",
+        "peso": 3
+      },
+      {
+        "texto": "sonidosmp3gratis",
+        "peso": 3
+      },
+      {
+        "texto": "indiehackers",
+        "peso": 3
+      },
+      {
+        "texto": "opensourcealternative",
+        "peso": 3
+      },
+      {
+        "texto": "open-meteo",
+        "peso": 3
+      },
+      {
+        "texto": "jotform",
+        "peso": 3
+      },
+      {
+        "texto": "mycompiler",
+        "peso": 3
+      },
+      {
+        "texto": "theresanaiforthat",
+        "peso": 3
+      },
+      {
+        "texto": "midu",
+        "peso": 3
+      },
+      {
+        "texto": "postspark",
+        "peso": 3
+      },
+      {
+        "texto": "addy",
+        "peso": 3
+      },
+      {
+        "texto": "gamma",
+        "peso": 3
+      },
+      {
+        "texto": "pctools",
+        "peso": 3
+      },
+      {
+        "texto": "svgcircus",
+        "peso": 3
+      },
+      {
+        "texto": "1001fonts",
+        "peso": 3
+      },
+      {
+        "texto": "pcf",
+        "peso": 3
+      },
+      {
+        "texto": "roadmap",
+        "peso": 3
+      },
+      {
+        "texto": "excalidraw",
+        "peso": 3
+      },
+      {
+        "texto": "diagrams",
+        "peso": 3
+      },
+      {
+        "texto": "dgm",
+        "peso": 3
+      },
+      {
+        "texto": "rapidtables",
+        "peso": 3
+      },
+      {
+        "texto": "softandapps",
+        "peso": 3
+      },
+      {
+        "texto": "it-tools",
+        "peso": 3
+      },
+      {
+        "texto": "public",
+        "peso": 3
+      },
+      {
+        "texto": "piliapp",
+        "peso": 3
+      },
+      {
+        "texto": "buttonoptimizer",
         "peso": 3
       }
     ]
@@ -1435,6 +2588,519 @@
     "keywords": [
       {
         "texto": "silviacongost",
+        "peso": 3
+      },
+      {
+        "texto": "psicoguias",
+        "peso": 3
+      },
+      {
+        "texto": "psicologiaymente",
+        "peso": 3
+      },
+      {
+        "texto": "psicoactiva",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "SENSE CLASIFICACIÓ",
+    "keywords": [
+      {
+        "texto": "kaggle",
+        "peso": 3
+      },
+      {
+        "texto": "com",
+        "peso": 3
+      },
+      {
+        "texto": "leyendasdelcine",
+        "peso": 3
+      },
+      {
+        "texto": "cinedirecto",
+        "peso": 3
+      },
+      {
+        "texto": "odysee",
+        "peso": 3
+      },
+      {
+        "texto": "idescat",
+        "peso": 3
+      },
+      {
+        "texto": "bing",
+        "peso": 3
+      },
+      {
+        "texto": "plex",
+        "peso": 3
+      },
+      {
+        "texto": "youtube",
+        "peso": 3
+      },
+      {
+        "texto": "cerebrodigital",
+        "peso": 3
+      },
+      {
+        "texto": "aprendergratis",
+        "peso": 3
+      },
+      {
+        "texto": "udayy",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "INTERNET I RECURSOS VARIS",
+    "keywords": [
+      {
+        "texto": "zenwebx",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "TOT EXCEL",
+    "keywords": [
+      {
+        "texto": "youtube",
+        "peso": 3
+      },
+      {
+        "texto": "officefacil",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "SENIORS",
+    "keywords": [
+      {
+        "texto": "duckduckgo",
+        "peso": 3
+      },
+      {
+        "texto": "uned",
+        "peso": 3
+      },
+      {
+        "texto": "barcelona",
+        "peso": 3
+      },
+      {
+        "texto": "brave",
+        "peso": 3
+      },
+      {
+        "texto": "buenavidasenior",
+        "peso": 3
+      },
+      {
+        "texto": "google",
+        "peso": 3
+      },
+      {
+        "texto": "tus-ayudas",
+        "peso": 3
+      },
+      {
+        "texto": "prensasocial",
+        "peso": 3
+      },
+      {
+        "texto": "helpmycash",
+        "peso": 3
+      },
+      {
+        "texto": "ayudas-para-mayores",
+        "peso": 3
+      },
+      {
+        "texto": "amiunique",
+        "peso": 3
+      },
+      {
+        "texto": "darebee",
+        "peso": 3
+      },
+      {
+        "texto": "amigosdelosmayores",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "WEBMAIL",
+    "keywords": [
+      {
+        "texto": "vivaldi",
+        "peso": 3
+      },
+      {
+        "texto": "proton",
+        "peso": 3
+      },
+      {
+        "texto": "hostinger",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "SERVEIS PERSONALS",
+    "keywords": [
+      {
+        "texto": "whatsapp",
+        "peso": 3
+      },
+      {
+        "texto": "agapea",
+        "peso": 3
+      },
+      {
+        "texto": "bancsabadell",
+        "peso": 3
+      },
+      {
+        "texto": "vhio",
+        "peso": 3
+      },
+      {
+        "texto": "coches",
+        "peso": 3
+      },
+      {
+        "texto": "bonpreu",
+        "peso": 3
+      },
+      {
+        "texto": "bonarea",
+        "peso": 3
+      },
+      {
+        "texto": "itv-tuvrheinland",
+        "peso": 3
+      },
+      {
+        "texto": "llibreriaelcucut",
+        "peso": 3
+      },
+      {
+        "texto": "nescafe",
+        "peso": 3
+      },
+      {
+        "texto": "4allfamily",
+        "peso": 3
+      },
+      {
+        "texto": "pccomponentes",
+        "peso": 3
+      },
+      {
+        "texto": "voluntaris",
+        "peso": 3
+      },
+      {
+        "texto": "xarxanet",
+        "peso": 3
+      },
+      {
+        "texto": "catchafire",
+        "peso": 3
+      },
+      {
+        "texto": "boox",
+        "peso": 3
+      },
+      {
+        "texto": "northgate",
+        "peso": 3
+      },
+      {
+        "texto": "renew",
+        "peso": 3
+      },
+      {
+        "texto": "esadir",
+        "peso": 3
+      },
+      {
+        "texto": "caudelguille",
+        "peso": 3
+      },
+      {
+        "texto": "ocu",
+        "peso": 3
+      },
+      {
+        "texto": "lasseguradora",
+        "peso": 3
+      },
+      {
+        "texto": "liferay",
+        "peso": 3
+      },
+      {
+        "texto": "flexicar",
+        "peso": 3
+      },
+      {
+        "texto": "gencat",
+        "peso": 3
+      },
+      {
+        "texto": "barcelonactiva",
+        "peso": 3
+      },
+      {
+        "texto": "abacus",
+        "peso": 3
+      },
+      {
+        "texto": "site",
+        "peso": 3
+      },
+      {
+        "texto": "youtube",
+        "peso": 3
+      },
+      {
+        "texto": "cruzroja",
+        "peso": 3
+      },
+      {
+        "texto": "casadellibro",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "TOT LINUX",
+    "keywords": [
+      {
+        "texto": "x10",
+        "peso": 3
+      },
+      {
+        "texto": "kde",
+        "peso": 3
+      },
+      {
+        "texto": "winux",
+        "peso": 3
+      },
+      {
+        "texto": "lastos",
+        "peso": 3
+      },
+      {
+        "texto": "com",
+        "peso": 3
+      },
+      {
+        "texto": "gnoppix",
+        "peso": 3
+      },
+      {
+        "texto": "pika-os",
+        "peso": 3
+      },
+      {
+        "texto": "cachyos",
+        "peso": 3
+      },
+      {
+        "texto": "linux",
+        "peso": 3
+      },
+      {
+        "texto": "manjaro",
+        "peso": 3
+      },
+      {
+        "texto": "google",
+        "peso": 3
+      },
+      {
+        "texto": "xda-developers",
+        "peso": 3
+      },
+      {
+        "texto": "duckduckgo",
+        "peso": 3
+      },
+      {
+        "texto": "neoteo",
+        "peso": 3
+      },
+      {
+        "texto": "kodi",
+        "peso": 3
+      },
+      {
+        "texto": "distrosea",
+        "peso": 3
+      },
+      {
+        "texto": "muylinux",
+        "peso": 3
+      },
+      {
+        "texto": "linuxlinks",
+        "peso": 3
+      },
+      {
+        "texto": "ayudalinux",
+        "peso": 3
+      },
+      {
+        "texto": "dustinbrett",
+        "peso": 3
+      },
+      {
+        "texto": "kali",
+        "peso": 3
+      },
+      {
+        "texto": "clearlinux",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "CERCADORS WEB",
+    "keywords": [
+      {
+        "texto": "ukdevilz",
+        "peso": 3
+      },
+      {
+        "texto": "wolframalpha",
+        "peso": 3
+      },
+      {
+        "texto": "startpage",
+        "peso": 3
+      },
+      {
+        "texto": "qwant",
+        "peso": 3
+      },
+      {
+        "texto": "lukol",
+        "peso": 3
+      },
+      {
+        "texto": "gibiru",
+        "peso": 3
+      },
+      {
+        "texto": "you",
+        "peso": 3
+      }
+    ]
+  },
+  {
+    "categoria": "UNIVERSITAT",
+    "keywords": [
+      {
+        "texto": "uoc",
+        "peso": 3
+      },
+      {
+        "texto": "upc",
+        "peso": 3
+      },
+      {
+        "texto": "open",
+        "peso": 3
+      },
+      {
+        "texto": "brave",
+        "peso": 3
+      },
+      {
+        "texto": "peretarres",
+        "peso": 3
+      },
+      {
+        "texto": "anaminecan",
+        "peso": 3
+      },
+      {
+        "texto": "stanford",
+        "peso": 3
+      },
+      {
+        "texto": "mit",
+        "peso": 3
+      },
+      {
+        "texto": "fisicalab",
+        "peso": 3
+      },
+      {
+        "texto": "soymatematicas",
+        "peso": 3
+      },
+      {
+        "texto": "ekuatio",
+        "peso": 3
+      },
+      {
+        "texto": "matematizame",
+        "peso": 3
+      },
+      {
+        "texto": "khanacademy",
+        "peso": 3
+      },
+      {
+        "texto": "electronicaonline",
+        "peso": 3
+      },
+      {
+        "texto": "wuolah",
+        "peso": 3
+      },
+      {
+        "texto": "estudyando",
+        "peso": 3
+      },
+      {
+        "texto": "educaweb",
+        "peso": 3
+      },
+      {
+        "texto": "orientanet",
+        "peso": 3
+      },
+      {
+        "texto": "superprof",
+        "peso": 3
+      },
+      {
+        "texto": "unican",
+        "peso": 3
+      },
+      {
+        "texto": "coursera",
+        "peso": 3
+      },
+      {
+        "texto": "edutin",
+        "peso": 3
+      },
+      {
+        "texto": "docsity",
         "peso": 3
       }
     ]

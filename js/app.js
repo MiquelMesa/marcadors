@@ -90,6 +90,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   const btnNext = document.getElementById('btn-next');
   const pageSize = document.getElementById('page-size');
 
+  function expandirDropZone() {
+    dropZone.classList.remove('collapsed');
+  }
+
+  function colapsarDropZone() {
+    dropZone.classList.add('collapsed');
+  }
+
   dropZone.addEventListener('dragover', (e) => {
     e.preventDefault();
     dropZone.classList.add('dragover');
@@ -106,7 +114,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   dropZone.addEventListener('click', () => {
-    folderPicker.click();
+    if (dropZone.classList.contains('collapsed')) {
+      expandirDropZone();
+      setTimeout(() => folderPicker.click(), 100);
+    } else {
+      folderPicker.click();
+    }
   });
 
   folderPicker.addEventListener('change', async () => {
@@ -182,6 +195,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const datosGuardados = await obtenerClasificacionGuardada();
   if (datosGuardados) {
+    colapsarDropZone();
     mostrarResultados(datosGuardados);
   }
 
@@ -324,6 +338,7 @@ async function enviarClasificacion() {
   try {
     const resultados = await clasificarEnServidor(parsedShortcuts);
     ocultarPanelImportacion();
+    colapsarDropZone();
     mostrarResultados(resultados);
   } catch (err) {
     mostrarError(`Error al classificar: ${err.message}`);

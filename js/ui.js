@@ -205,8 +205,10 @@ function seleccionarTema(index) {
     btn.setAttribute('aria-selected', i === index);
   });
 
+  if (currentTheme !== index) {
+    currentPage = 1;
+  }
   currentTheme = index;
-  currentPage = 1;
   renderizarAccesos();
 }
 
@@ -215,13 +217,64 @@ function renderizarAccesos() {
 
   const tematica = classificationResults.tematicas[currentTheme];
   const accesos = tematica.accesos;
-  const totalPages = Math.ceil(accesos.length / pageSize);
+
+  // Sort alphabetically by nombreNuevo
+  const accesosOrdenats = [...accesos].sort((a, b) =>
+    a.nombreNuevo.localeCompare(b.nombreNuevo)
+  );
+
+  const totalPages = Math.max(1, Math.ceil(accesos.length / pageSize));
+  if (currentPage > totalPages) {currentPage = totalPages;}
   const start = (currentPage - 1) * pageSize;
   const end = Math.min(start + pageSize, accesos.length);
-  const pageAccesos = accesos.slice(start, end);
+  const pageAccesos = accesosOrdenats.slice(start, end);
 
   dom.shortcutsDisplay.innerHTML = '';
   dom.pagination.classList.remove('hidden');
+
+  // ── Category Header ──
+  const header = document.createElement('div');
+  header.className = 'category-header';
+
+  const nameSpan = document.createElement('span');
+  nameSpan.className = 'cat-header-name';
+  nameSpan.textContent = tematica.nombre;
+
+  const countSpan = document.createElement('span');
+  countSpan.className = 'cat-header-count';
+  countSpan.textContent = `${accesos.length} ENLLAÇOS`;
+
+  const pageNav = document.createElement('span');
+  pageNav.className = 'cat-header-pages';
+
+  const prevBtn = document.createElement('button');
+  prevBtn.className = 'cat-page-btn';
+  prevBtn.textContent = '‹';
+  prevBtn.disabled = currentPage <= 1;
+  prevBtn.addEventListener('click', (e) => { e.stopPropagation(); paginaAnterior(); });
+
+  const pageText = document.createElement('span');
+  pageText.textContent = `PÀG ${currentPage} de ${totalPages}`;
+
+  const nextBtn = document.createElement('button');
+  nextBtn.className = 'cat-page-btn';
+  nextBtn.textContent = '›';
+  nextBtn.disabled = currentPage >= totalPages;
+  nextBtn.addEventListener('click', (e) => { e.stopPropagation(); paginaSiguiente(); });
+
+  pageNav.appendChild(prevBtn);
+  pageNav.appendChild(pageText);
+  pageNav.appendChild(nextBtn);
+
+  header.appendChild(nameSpan);
+  header.appendChild(countSpan);
+  header.appendChild(pageNav);
+
+  dom.shortcutsDisplay.appendChild(header);
+
+  // ── Grid wrapper ──
+  const grid = document.createElement('div');
+  grid.className = 'shortcuts-grid';
 
   pageAccesos.forEach((acceso) => {
     const isFav = tematica.nombre === 'FAVORITS';
@@ -316,6 +369,14 @@ function renderizarAccesos() {
     original.className = 'original-name';
     original.textContent = `Fitxer d'origen: ${acceso.nombreOriginal}`;
 
+    // Date
+    const dateSpan = document.createElement('span');
+    dateSpan.className = 'shortcut-date';
+    if (acceso.dataAlta) {
+      const d = new Date(acceso.dataAlta);
+      dateSpan.textContent = `Afegit: ${d.toLocaleDateString('ca-ES', { year: 'numeric', month: 'short', day: 'numeric' })}`;
+    }
+
     if (urlDestacada && acceso.url === urlDestacada) {
       item.classList.add('highlighted');
     }
@@ -323,6 +384,7 @@ function renderizarAccesos() {
     item.appendChild(headerRow);
     item.appendChild(link);
     item.appendChild(original);
+    item.appendChild(dateSpan);
     if (!isFav) {
       const btnMove = document.createElement('button');
       btnMove.className = 'btn-reclasificar';
@@ -334,8 +396,10 @@ function renderizarAccesos() {
       );
       item.appendChild(btnMove);
     }
-    dom.shortcutsDisplay.appendChild(item);
+    grid.appendChild(item);
   });
+
+  dom.shortcutsDisplay.appendChild(grid);
 
   if (urlDestacada) {
     const highlighted = dom.shortcutsDisplay.querySelector('.highlighted');
@@ -478,6 +542,9 @@ function buscarEnlaces(query) {
   dom.shortcutsDisplay.innerHTML = '';
   dom.pagination.classList.add('hidden');
 
+  const grid = document.createElement('div');
+  grid.className = 'shortcuts-grid';
+
   resultados.forEach((acceso) => {
     const item = document.createElement('div');
     item.className = 'shortcut-item';
@@ -572,8 +639,19 @@ function buscarEnlaces(query) {
     link.textContent = acceso.url;
     item.appendChild(link);
 
-    dom.shortcutsDisplay.appendChild(item);
+    // Date
+    const dateSpan = document.createElement('span');
+    dateSpan.className = 'shortcut-date';
+    if (acceso.dataAlta) {
+      const d = new Date(acceso.dataAlta);
+      dateSpan.textContent = `Afegit: ${d.toLocaleDateString('ca-ES', { year: 'numeric', month: 'short', day: 'numeric' })}`;
+    }
+    item.appendChild(dateSpan);
+
+    grid.appendChild(item);
   });
+
+  dom.shortcutsDisplay.appendChild(grid);
 }
 
 export function filtrarTematicas(query) {

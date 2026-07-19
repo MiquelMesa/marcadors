@@ -18,11 +18,11 @@ describe('obtenerTematica', () => {
   });
 
   test('detecta formacion por udemy', () => {
-    expect(obtenerTematica('https://www.udemy.com/course', 'udemy.url')).toBe('FORMACIÓ');
+    expect(obtenerTematica('https://www.udemy.com/course', 'udemy.url')).toBe('FORMACIÓ EN IT');
   });
 
   test('detecta base de datos por mysql', () => {
-    expect(obtenerTematica('https://www.mysql.com', 'mysql.url')).toBe('BASE DE DADES');
+    expect(obtenerTematica('https://www.mysql.com', 'mysql.url')).toBe('TOT BASE DADES');
   });
 
   test('detecta excel por excel', () => {
@@ -30,7 +30,7 @@ describe('obtenerTematica', () => {
   });
 
   test('detecta disseny per figma', () => {
-    expect(obtenerTematica('https://figma.com', 'figma.url')).toBe('RECURSOS DISSENY');
+    expect(obtenerTematica('https://figma.com', 'figma.url')).toBe('TOT DISSENY WEB');
   });
 
   test('devuelve categoria por defecto para url desconocida', () => {
@@ -43,7 +43,7 @@ describe('obtenerTematica', () => {
 
   test('clasifica correctamente con categoría de peso mayor', () => {
     const resultado = obtenerTematica('https://github.com/learn-python', 'github-curso.url');
-    expect(['PROGRAMACIÓ', 'FORMACIÓ']).toContain(resultado);
+    expect(['PROGRAMACIÓ', 'FORMACIÓ EN IT']).toContain(resultado);
   });
 });
 

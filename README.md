@@ -8,17 +8,15 @@ Aplicació web per importar, classificar i gestionar grans volums de marcadors (
 
 ## Captures de pantalla
 
-| Pantalla principal | Resultats classificats |
-|:---:|:---:|
-| ![Zona d'importació](docs/screenshots/01-dropzone.png) | ![Resultats per categories](docs/screenshots/02-results.png) |
+> Les captures reflecteixen la versió actual. El disseny és fosc amb accents cian i porpra, inspirat en [tabularis.dev](https://tabularis.dev/).
 
-| Afegir URL manualment | Editar nom del marcador |
+| Pantalla principal | Classificació per categories |
 |:---:|:---:|
-| ![Barra d'afegir URL](docs/screenshots/03-addurl.png) | ![Modal d'editar nom](docs/screenshots/04-modal-editname.png) |
+| ![Zona d'importació colapsable](docs/screenshots/01-dropzone.png) | ![Enllaços classificats amb capçalera de categoria](docs/screenshots/02-results.png) |
 
-| Cerca per enllaços |
-|:---:|
-| ![Cerca per enllaços](docs/screenshots/05-search-links.png) |
+| Barra d'afegir URL | Cerca d'enllaços |
+|:---:|:---:|
+| ![Afegir URL manualment](docs/screenshots/03-addurl.png) | ![Cerca a totes les categories](docs/screenshots/04-search.png) |
 
 ---
 
@@ -29,48 +27,30 @@ Aplicació web per importar, classificar i gestionar grans volums de marcadors (
 - **Importa fitxers HTML** d'exportació de marcadors (format Netscape)
 - Processa milers de fitxers en segons
 - Deduplica automàticament URLs repetides
+- **Zona de descàrrega colapsable**: després de la primera importació, la zona d'arrossegament es contreu; fes clic per expandir-la de nou
 
 ### Classificació automàtica
 - Cada URL s'analitza i es classifica en una categoria segons paraules clau
 - Les categories es defineixen al fitxer `reglas.json`
 - Sistema de ponderació: les paraules clau tenen pesos (`peso`) que determinen la categoria guanyadora
-- El domini de la URL s'extreu automàticament per generar un nom llegible
+- El domini de la URL s'extreu automàticament per generar un nom llegible (`DOMINI - CATEGORIA`)
 
-### Categories predefinides (25)
-| Categoria | Descripció |
-|-----------|------------|
-| PER A IA | ChatGPT, Claude, Gemini, eines d'IA |
-| PROGRAMACIÓ | GitHub, StackOverflow, llenguatges, frameworks |
-| FORMACIÓ | Cursos, Udemy, Coursera, tutorials |
-| BASE DE DADES | SQL, MySQL, PostgreSQL, MongoDB |
-| RECURSOS EXCEL | Excel, PowerBI, VBA |
-| RECURSOS DISSENY | Figma, Canva, icones, imatges |
-| TREBALL | LinkedIn, ofertes, freelance |
-| SOFTWARE I EINES | Eines de productivitat, hosting, devops |
-| NOTÍCIES | Diaris, revistes, blogs de tecnologia |
-| DOCUMENTACIÓ | Manuals, wikis, guies de referència |
-| VIDEOJOCS | Steam, PlayStation, Nintendo |
-| MÚSICA I ÀUDIO | Spotify, podcasts, àudios |
-| XARXES SOCIALS | Reddit, Twitter, Instagram, YouTube |
-| CORRECTORS | Correcció ortogràfica, RAE, traductors |
-| UTILITATS WEB | Eines online, convertidors, generadors |
-| LECTURA I CULTURA | Llibres, filosofia, història |
-| LLIBRES ELECTRÒNICS | Ebooks i lectura digital |
-| CALENDARIS | Calendaris i esdeveniments |
-| REVISTES | Subscripcions a revistes |
-| IDIOMES | Aprenentatge d'idiomes |
-| VOLUNTARIAT | Organitzacions i oportunitats |
-| APUNTS | Recursos d'estudi |
-| RECURSOS INTERNET | Altres recursos web |
-| PSICOLOGIA | Benestar i salut mental |
-| FAVORITS | Marcadors marcats com a preferits |
+### Visualització i navegació
+- **Capçalera de categoria**: en seleccionar una categoria, es mostra el nom, el nombre d'enllaços i la paginació (`‹ PÀG X de Y ›`)
+- **Ordre alfabètic**: els enllaços s'ordenen automàticament per descripció (A-Z)
+- **Data d'afegit**: cada enllaç mostra la data en què es va importar
+- **Paginació intel·ligent**: en editar, moure o eliminar un enllaç, la categoria i pàgina actual es mantenen, sense reiniciar la navegació
+- **Disseny responsive**: 2 columnes en escriptori, 1 columna en mòbil
 
 ### Gestió de marcadors
 - **Moure entre categories**: arrossega un marcador directament a la categoria de destí, o usa el botó "Moure" i selecciona la categoria
-- **Editar nom personalitzat**: canvia el nom generat automàticament per un nom personalitzat
+- **Editar nom personalitzat**: canvia el nom generat automàticament per un nom personalitzat (es preserva encara que es renombre la categoria)
 - **Eliminar marcadors**: esborra marcadors individuals amb confirmació prèvia
 - **Marcadors favorits**: afegeix URLs a la categoria FAVORITS sense moure'ls de la seva categoria original; els favorits es mostren amb un ressal visual (franja groga)
 - **Afegir URL manualment**: afegeix URLs individuals des de la barra superior, amb selecció de categoria o creació de categoria nova
+
+### Categories
+L'aplicació inclou desenes de categories predefinides amb centenars de paraules clau per a una classificació precisa. Les categories cobreixen: IA, programació, formació, bases de dades, disseny web, música, xarxes socials, lectures, eines, i moltes més. Consulta el fitxer `reglas.json` per a la llista completa.
 
 ### Cerca
 - **Per categories**: filtra categories per nom
@@ -89,17 +69,18 @@ Aplicació web per importar, classificar i gestionar grans volums de marcadors (
 - Paginació configurable (20/50/100 elements per pàgina)
 - Estadístiques en temps real: totals, duplicats, classificats
 - Reinici complet de dades (amb confirmació)
+- **Rate limiting**: 30 peticions/minut a l'API
 
 ---
 
 ## Tecnologies
 
 - **Backend**: Node.js + Express 5
-- **Frontend**: JavaScript natiu (ES modules), CSS modern (variables, dark mode)
+- **Frontend**: JavaScript natiu (ES modules), CSS modern (variables, dark/light mode, glassmorphism)
 - **Base de dades**: Fitxer JSON (`datos_clasificados.json`)
 - **Logging**: Pino (estructurat, amb pino-pretty per desenvolupament)
 - **Rate limiting**: express-rate-limit (30 peticions/minut a l'API)
-- **Testing**: Jest (25 tests de classificació)
+- **Testing**: Jest (25+ tests de classificació)
 
 ---
 
@@ -181,7 +162,7 @@ marcadors/
 ├── js/
 │   ├── app.js          # Lògica principal de la UI
 │   ├── api.js           # Comunicació amb el servidor (fetch API)
-│   ├── ui.js            # Components UI, modals, renderitzat
+│   ├── ui.js            # Components UI, modals, renderitzat, paginació
 │   └── lector.js        # Lectura de fitxers .url i .html
 ├── tests/
 │   └── classificador.test.js  # Tests unitaris (Jest)
@@ -192,7 +173,7 @@ marcadors/
 ├── server.js            # Servidor Express (API + fitxers estàtics)
 ├── classificador.js     # Motor de classificació per paraules clau
 ├── logger.js            # Configuració de Pino
-├── style.css            # Estils CSS (dark/light, responsive)
+├── style.css            # Estils CSS (dark/light, responsive, glassmorphism)
 ├── index.html           # Pàgina principal
 ├── reglas.json          # Regles de classificació (categories + keywords)
 ├── reglas.default.json  # Còpia de seguretat de les regles
@@ -243,11 +224,17 @@ L'aplicació exposa una API REST per a operacions automatitzades:
 | `POST` | `/api/reclasificar` | Mou una URL a una altra categoria |
 | `POST` | `/api/marcar-favorito` | Afegeix una URL a FAVORITS |
 | `POST` | `/api/quitar-favorito` | Treu una URL de FAVORITS |
-| `POST` | `/api/renombrar-categoria` | Renombra una categoria |
+| `POST` | `/api/renombrar-categoria` | Renombra una categoria (preserva noms editats) |
 | `DELETE` | `/api/eliminar` | Elimina una URL |
 | `PUT` | `/api/editar-nombre` | Edita el nom personalitzat d'una URL |
 | `GET` | `/api/exportar-html` | Exporta tot en format HTML de marcadors |
 | `POST` | `/api/reiniciar` | Reinicia totes les dades |
+
+### Canvis recents a l'API
+
+- **`POST /api/clasificar-url`**: ara inclou `dataAlta` (timestamp ISO) a cada nova URL
+- **`PUT /api/editar-nombre`**: marca la URL com a `nombreEditado: true` per preservar el nom personalitzat en futures operacions
+- **`POST /api/renombrar-categoria`**: no regenera el nom de les URLs que han estat editades manualment
 
 ---
 

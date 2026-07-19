@@ -231,6 +231,7 @@ subApp.post('/api/clasificar-url', async (req, res) => {
       nombreOriginal: item.nombreArchivo,
       nombreNuevo,
       categoria,
+      dataAlta: new Date().toISOString(),
     });
   }
 
@@ -366,7 +367,9 @@ subApp.post('/api/renombrar-categoria', async (req, res) => {
     for (const u of data.urls) {
       if (u.categoria === desde) {
         u.categoria = hasta;
-        u.nombreNuevo = generarNombreNuevo(u.url, hasta);
+        if (!u.nombreEditado) {
+          u.nombreNuevo = generarNombreNuevo(u.url, hasta);
+        }
       }
     }
     await guardarDatos(data);
@@ -423,6 +426,7 @@ subApp.put('/api/editar-nombre', async (req, res) => {
       return res.status(404).json({ error: 'URL no trobada' });
     }
     data.urls[idx].nombreNuevo = nuevoNombre.trim();
+    data.urls[idx].nombreEditado = true;
     await guardarDatos(data);
     logger.info({ url, nombreAnterior: data.urls[idx].nombreOriginal, nuevoNombre }, 'Nombre editado');
     res.json(construirRespuesta(data));
