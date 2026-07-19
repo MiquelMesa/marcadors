@@ -1,18 +1,26 @@
 const pino = require('pino');
-const isDev = process.env.NODE_ENV !== 'production';
+
+const transportOpts = (() => {
+  try {
+    require.resolve('pino-pretty');
+    return {
+      transport: {
+        target: 'pino-pretty',
+        options: {
+          colorize: true,
+          translateTime: 'SYS:standard',
+          ignore: 'pid,hostname',
+        },
+      },
+    };
+  } catch {
+    return {};
+  }
+})();
 
 const logger = pino({
   level: process.env.LOG_LEVEL || 'info',
-  ...(isDev && {
-    transport: {
-      target: 'pino-pretty',
-      options: {
-        colorize: true,
-        translateTime: 'SYS:standard',
-        ignore: 'pid,hostname',
-      },
-    },
-  }),
+  ...transportOpts,
 });
 
 module.exports = logger;

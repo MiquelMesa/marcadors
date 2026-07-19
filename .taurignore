@@ -1,0 +1,14 @@
+node_modules/
+src-tauri/
+.git/
+scripts/
+logs/
+tests/
+docs/
+screenshots/
+hooks/
+info/
+objects/
+refs/
+*.md
+*.log

@@ -12,7 +12,10 @@
     "pm2:logs": "pm2 logs marcadors",
     "test": "jest",
     "lint": "eslint .",
-    "format": "prettier --write \"**/*.{js,json,css,html}\""
+    "format": "prettier --write \"**/*.{js,json,css,html}\"",
+    "tauri": "tauri",
+    "build:sea": "powershell -ExecutionPolicy Bypass -File scripts/build-sea.ps1",
+    "tauri:build": "npm run build:sea && npx tauri build"
   },
   "dependencies": {
     "dotenv": "^16.6.1",
@@ -21,6 +24,7 @@
     "pino": "^9.6.0"
   },
   "devDependencies": {
+    "@tauri-apps/cli": "^2",
     "eslint": "^8.57.0",
     "jest": "^29.7.0",
     "pino-pretty": "^13.0.0",

@@ -2,3 +2,7 @@ node_modules/
 .env
 datos_clasificados.json
 logs/
+src-tauri/target/
+src-tauri/server.exe
+src-tauri/*.blob
+src-tauri/server-bundle.js
